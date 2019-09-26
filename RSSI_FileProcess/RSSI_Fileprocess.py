@@ -34,4 +34,4 @@ for line in RssiFile:
     elif line.find(Str_Rear) >= 0:
         print(line)
         LineBuff.append(line)
-OutPutFile.write(LineBuff)
+OutPutFile.writelines(LineBuff)
