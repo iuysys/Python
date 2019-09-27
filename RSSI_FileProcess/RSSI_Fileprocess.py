@@ -2,6 +2,8 @@
 # -- Import
 # ================================================================
 from matplotlib import pyplot as plt
+import re
+import win32ui
 
 # ================================================================
 # -- Const
@@ -34,24 +36,38 @@ def HexList2DecList(HexList):
 
 
 # ================================================================
+# -- 去除字符串控制字
+# ================================================================
+def ClearControlChar(s):
+    temp = re.sub('[\x00-\x09|\x0b-\x0c|\x0e-\x1f]', '', s)
+    return temp
+
+
+# ================================================================
 # --
+# -- 当Flash不存在手机信息,flash值0xff会被当做控制字打印在文本中,造成文本
+#       处理出错,此处需要做异常处理
+#       使用sub正则表达式去除
 # ================================================================
 def ReadPhoneInfo(fileBuff):
     info = []
     Str_Brand = "PhoneBrand is"
     Str_Model = "PhoneModel is"
-    for line in fileBuff:
-        if line.find(Str_Brand) >= 0:
-            info.append(line[len(Str_Brand) + 1:])  # 默认数据打印完全
-        elif line.find(Str_Model) >= 0:
-            info.append(line[len(Str_Model) + 1:])
-
-
+    for InfoLine in fileBuff:
+        if InfoLine.find(Str_Brand) >= 0:
+            info.append(InfoLine[len(Str_Brand) + 1:])  # 默认数据打印完全
+        elif InfoLine.find(Str_Model) >= 0:
+            info.append(InfoLine[len(Str_Model) + 1:])
     return info
 
-with open("OPPOR11.TXT") as InfoFile:
-    print(ReadPhoneInfo(InfoFile))
 
+test = win32ui.CreateFileDialog(1)
+test.DoModal()
+InfoFilePath = test.GetPathName()
+
+with open(InfoFilePath) as InfoFile:
+    with open("PhoneInfoOutFile.txt", 'w') as InfoFileOut:
+        InfoFileOut.writelines(ReadPhoneInfo(InfoFile))
 
 with open(FileDirector + FileNameTemp) as RssiFile:
     for line in RssiFile:

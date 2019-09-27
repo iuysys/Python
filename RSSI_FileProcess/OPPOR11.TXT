@@ -11,8 +11,8 @@ PhoneParam is 4C4C5ACE50C8C8C8C81D
 algo_version: A12_V1.3_20190716
 Read data based on calibration in flash:
 Read para in flash: 255
-Read phone brand in flash: ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
-Read phone type in flash: ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+Read phone brand in flash: ????????????????
+Read phone type in flash: ????????????????????????
 Parameter match succeed based on VK **********
 Beyond the local phone list
 Left_para: -62
@@ -23,7 +23,7 @@ comp_PE_lockSt: -5
 **********************************************
 phone_parameter_match_resut = 0 
 Token is 32303231
-AppBle Version is€ 
+AppBle Version is? 
 Set IMMO Flag
 W:2103:13:0--------------------------------
 APDU_CMD:
