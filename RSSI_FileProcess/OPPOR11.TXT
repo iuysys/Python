@@ -1,0 +1,107 @@
+ingeek_cmd_msg_handle end......
+Cmd: VEHICLE_USERINFO_SET:[ 31 ]
+IphoneNO is 15876965073
+10 
+Owner 0
+UserType = 1 
+PhoneBrand is OPPO
+PhoneModel is OPPO R11
+PhoneParam is 4C4C5ACE50C8C8C8C81D
+**********************************************
+algo_version: A12_V1.3_20190716
+Read data based on calibration in flash:
+Read para in flash: 255
+Read phone brand in flash: ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+Read phone type in flash: ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
+Parameter match succeed based on VK **********
+Beyond the local phone list
+Left_para: -62
+Min_indoor_para: -55
+Min_indoor_powerON_para: -60
+comp_error_para: 3
+comp_PE_lockSt: -5
+**********************************************
+phone_parameter_match_resut = 0 
+Token is 32303231
+AppBle Version is€ 
+Set IMMO Flag
+W:2103:13:0--------------------------------
+APDU_CMD:
+00 b6 00 00 06 54 f3 00 01 01 00 
+HSM_RESP:
+78 7f 7a 0e 3f 83 01 9d 5d 00 b2 84 90 2a a6 e7 
+99 cb 6e b6 52 15 e3 e2 73 5b 7d fc 26 ed b9 46 
+90 00 
+BleMsgParse: result=[0]
+BleMsgResp:  len=38
+Sent to BLE:
+90 a1 00 26 00 49 00 05 04 fb 02 00 78 7f 7a 0e 
+3f 83 01 9d 5d 00 b2 84 90 2a a6 e7 99 cb 6e b6 
+52 15 e3 e2 73 5b 7d fc 26 ed b9 46 
+***Zone_WakeUp: 12, STB_time = 595 
+***STB_PEMaxCnt: 144, STB_Cnt = 2 
+LEFT_NODE: bd b9 c2 bc bd bd c1 c3 bc b9 b9 
+RIGHT_NODE: c2 bc bd c0 c1 c4 bf ab b4 c3 bd 
+MASTER_NODE: cf ce d7 cf dc d1 d0 c5 d5 ce d0 
+REAR_NODE: 
+Disarmed_thre_min_indoor: -55
+thre_left_doorLockst: -62
+thre_right_doorLockst: -62
+rssi_indoor: -41
+rssi_left: -63
+rssi_right: -63
+thre_min_indoor_disarmedSt: -55
+*******Zone_WakeUp: 0x12
+PEPS_location: result=I zone=0x2 wel_zone=0x2
+Step:LowPowerWakeReason=10,WakeReasonByCAN=01,WakeByBlePair=00
+Step:PWR_STEP_OFF_BEGIN
+peps_send_start!
+peps_seed_requet!
+peps_seed_wait_ok!
+peps_key_send_request!
+peps_key_wait_response_timeout!
+peps_send_change_to_idle!
+peps_send_start!
+peps_seed_requet!
+peps_seed_wait_ok!
+peps_key_send_request!
+peps_key_wait_response_timeout!
+LEFT_NODE: bf c3 ab c3 c3 c6 cb c1 c7 bf 
+RIGHT_NODE: c5 c3 b5 c2 c0 c3 b7 
+MASTER_NODE: d0 d6 d7 db d6 da db db d6 da 
+REAR_NODE: 
+Disarmed_thre_min_indoor: -55
+thre_left_doorLockst: -62
+thre_right_doorLockst: -62
+rssi_indoor: -38
+rssi_left: -57
+rssi_right: -62
+thre_min_indoor_disarmedSt: -55
+*******Zone_WakeUp: 0x12
+PEPS_location: result=I zone=0x2 wel_zone=0x2
+peps_send_change_to_idle!
+peps_send_start!
+peps_seed_requet!
+peps_seed_wait_ok!
+peps_key_send_request!
+peps_key_wait_response_timeout!
+peps_send_change_to_idle!
+peps_send_start!
+peps_seed_requet!
+peps_seed_wait_ok!
+peps_key_send_request!
+peps_key_wait_response_timeout!
+LEFT_NODE: c4 c0 c1 c1 c3 c1 c2 
+RIGHT_NODE: c3 b7 c3 c3 ba c3 c1 
+MASTER_NODE: d6 d1 d1 d1 d1 d4 d6 d0 db 
+REAR_NODE: 
+Disarmed_thre_min_indoor: -55
+thre_left_doorLockst: -62
+thre_right_doorLockst: -62
+rssi_indoor: -40
+rssi_left: -61
+rssi_right: -62
+thre_min_indoor_disarmedSt: -55
+*******Zone_WakeUp: 0x12
+PEPS_location: result=I zone=0x2 wel_zone=0x2
+peps_send_change_to_idle!
